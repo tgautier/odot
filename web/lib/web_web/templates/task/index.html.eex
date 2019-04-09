@@ -1,0 +1,8 @@
+<%= for task <- @tasks do %>
+<fieldset>
+  <legend><%= task.description %></legend>
+  <div>id: <%= task.id %></div>
+  <div>reminder: <%= task.reminder_at %></div>
+  <div>done: <%= task.done %></div>
+</fieldset>
+<% end %>

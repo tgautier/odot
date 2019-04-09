@@ -1,4 +1,5 @@
 .DS_Store
+.env_vars
 *.ez
 /_build/
 /.fetch
