@@ -1,4 +1,8 @@
 defmodule Todo do
+  def all do
+    Todo.Workflows.GetAllTasks.run
+  end
+
   def create(params) do
     Todo.Workflows.CreateTask.run(%{
       input: %{
@@ -8,7 +12,7 @@ defmodule Todo do
     })
   end
 
-  def toggle(id) do
+  def toggle_done(id) do
     Todo.Workflows.ToggleTaskDone.run(%{
       input: %{id: id}
     })
