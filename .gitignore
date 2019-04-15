@@ -1,0 +1,9 @@
+.DS_Store
+.env_vars
+*.ez
+/_build/
+/.fetch
+/cover/
+/deps/
+/doc/
+erl_crash.dump

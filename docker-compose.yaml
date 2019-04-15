@@ -1,0 +1,10 @@
+version: '2.1'
+services:
+  todo_database:
+    image: postgres:10.1
+    environment:
+      POSTGRES_USER: "todo"
+      POSTGRES_PASSWORD: "todo"
+      POSTGRES_DB: "todo_dev"
+    ports:
+      - "5432:5432"
